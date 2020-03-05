@@ -1,0 +1,15 @@
+version: "3.3"
+
+services:
+  rails_docker:
+    container_name: rails_docker 
+    stdin_open: true
+    tty: true
+    build:
+      dockerfile: ./docker/Dockerfile
+      context: ../.
+    image: docker_rails_img
+    volumes: 
+      - "./../:/app"
+    ports:
+      - 3000:3000
