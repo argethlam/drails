@@ -16,8 +16,8 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
 
 RUN gem install rails
 
-#COPY ./docker/.bashrc /root/.bashrc
-#RUN /bin/bash -c 'source /root/.bashrc'
+COPY ./docker/.bashrc /root/.bashrc
+RUN /bin/bash -c 'source /root/.bashrc'
 
 
 WORKDIR /app
