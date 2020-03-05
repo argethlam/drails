@@ -16,6 +16,7 @@ alias l='ls $LS_OPTIONS -lA'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+alias ..='cd ..'
 
 # rails alias
 alias rs='rails s -b 0.0.0.0'
